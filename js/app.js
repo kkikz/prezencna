@@ -28,3 +28,5 @@ $(window).scroll(function () {
  });
 */
 
+
+//Gallery carousel apartman
