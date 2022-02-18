@@ -1,227 +1,487 @@
 <!doctype html>
 <html>
 <head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href="css/apartman-style.css" rel="stylesheet">
-	
-	<script src="./js/jquery-3.6.0.min.js"></script>
-	
-	<title>Hello, world!</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/apartman-style.css" rel="stylesheet">
+  
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  
+  <title>Hello, world!</title>
 </head>
 
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">⇧</button>
-	
-	<!---HEADER-->
-	<div class="wrap-top">
-		<div class="container">
-			<div class="box">
-				<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4">
-					<a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
-						<img class="bi me-2" src="img/logoo.png" alt="Logo" width="40" height="32" role="img" aria-label="Bootstrap"></img>
-					</a>
-					
-					<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-						<li><a href="./index.html#o-nas"><button type="button" class="btn btn-outline-light">O nás</button></a></li>
-						<li><a href="./index.html#services"><button type="button" class="btn btn-outline-light">Služby</button></a></li>
-						<li><a href="./index.html#apartmany"><button type="button" class="btn btn-outline-light">Apartmány</button></a></li>
-						<li><a href="#contact"><button type="button" class="btn btn-outline-warning">Kontakt</button></a></li>
-					</ul>
-				</header>
-			</div>
-		</div>
-		
-		<!---HERO-->
-		<div class="container">
-			<div class="px-4 hero-pad my-4 text-center text-light hero">
-				<!---<img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">--->
-				<h1 class="display-5 pb-3 fw-bold title border-bottom">Nejaký nadpis</h1>
-				<div class="col-lg-6 mx-auto">
-					<p class="lead pb-5 pt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<!--
-						<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-							<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-							<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-						</div>
-					-->
-					<div id="section05" class="demo">
-						<a href="#o-nas"><span></span></a>
-					</div>
-				</div>
-			</div>  
-		</div>
-	</div>
-	
-	<!--GALERIA-->
-	<main>
-		<div class="container px-0" id="gallery">
-			<div class="intro py-5">
-			</div>
-			<div class="d-flex flex-column-reverse flex-xl-row pb-5 px-5">
-				<div class="main-photo w-100 px-5 align-self-center">
-					<div class="col-12 pr-1 py-1"><a href="img/ap2.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap2.jpg"></a></div>
-					<div class="row ">
-						<div class="col-3 item py-3"><a href="img/ap1/ap1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap1.jpg"></a></div>
-						<div class="col-3 item py-3"><a href="img/ap1/ap2.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap2.jpg"></a></div>
-						<div class="col-3 item py-3"><a href="img/ap1/ap1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap1.jpg"></a></div>
-						<div class="col-3 item py-3 align-self-center h-100 position-relative"><a href="img/ap1/ap1.jpg" data-lightbox="photos"><img class="img-fluid last-pic" src="img/ap1.jpg"><p class="text-center last-pic-text">°°°</p></a>
-						</div>
-						
-						<!--SCHOVANE-->
-						<div class="col-3 item py-3 visually-hidden"><a href="img/ap1/ap2.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap2.jpg"></a></div>
-						<div class="col-3 item py-3 visually-hidden"><a href="img/ap1/ap1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap1.jpg"></a></div>
-						<div class="col-3 item py-3 visually-hidden"><a href="img/ap1/ap1.jpg" data-lightbox="photos"><img class="img-fluid" src="img/ap1.jpg"></a></div>
-						
-					</div>
-				</div>
-				<div class="w-100 px-0 px-md-5 align-self-center">
-					<div class="w-100">
-						<h1 class="text-center text-lg-end">Info o apartmáne</h1>
-					</div>
-					<div class="w-100 row justify-content-center">
-						<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4 py-5">
-							<div class="col d-flex align-items-start">
-								<img src="img/ap-icon1.svg" alt="twbs" width="32" height="32" class="w-25">
-								<div class="w-75">
-									<h4 class="fw-bold mb-0">Info</h4>
-									<p>Paragraph of text beneath the heading to explain the heading.</p>
-								</div>
-							</div>
-							<div class="col d-flex align-items-start">
-								<img src="img/ap-icon1.svg" alt="twbs" width="32" height="32" class="w-25">
-								<div class="w-75">
-									<h4 class="fw-bold mb-0">Info</h4>
-									<p>Paragraph of text beneath the heading to explain the heading.</p>
-								</div>
-							</div>
-							<div class="col d-flex align-items-start">
-								<img src="img/ap-icon1.svg" alt="twbs" width="32" height="32" class="w-25">
-								<div class="w-75">
-									<h4 class="fw-bold mb-0">Info</h4>
-									<p>Paragraph of text beneath the heading to explain the heading.</p>
-								</div>
-							</div>
-							<div class="col d-flex align-items-start">
-								<img src="img/ap-icon1.svg" alt="twbs" width="32" height="32" class="w-25">
-								<div class="w-75">
-									<h4 class="fw-bold mb-0">Info</h4>
-									<p>Paragraph of text beneath the heading to explain the heading.</p>
-								</div>
-							</div>
-						</div>
-						<div class="w-75 align-self-end">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ullam temporibus doloribus iusto accusantium similique. Exercitationem architecto hic sed reprehenderit alias! Distinctio voluptatum omnis officiis consequatur alias molestiae doloremque ad.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		<!--KONTAKT-->
-		<section class="ftco-section overflow-hidden" id="contact">
-			<div class="container contact-bg">
-				<div class="row justify-content-center">
-					<div class="col-md-6 text-center mb-5">
-						<h1 class="heading-section">Kontakt</h1>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-10 col-md-12">
-						<div class="wrapper">
-							<div class="row justify-content-center">
-								<div class="col-lg-8 mb-5">
-									<div class="row">
-										<div class="col-md-4 pb-5">
-											<div class="dbox w-100 text-center">
-												<div class="icon d-flex align-items-center justify-content-center">
-													<span class="fa fa-map-marker"></span>
-												</div>
-												<div class="text">
-													<p><span>Adresa:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 pb-5">
-											<div class="dbox w-100 text-center">
-												<div class="icon d-flex align-items-center justify-content-center">
-													<span class="fa fa-phone"></span>
-												</div>
-												<div class="text">
-													<p><span>Tel. Číslo:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4 pb-5">
-											<div class="dbox w-100 text-center">
-												<div class="icon d-flex align-items-center justify-content-center">
-													<span class="fa fa-paper-plane"></span>
-												</div>
-												<div class="text">
-													<p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!--
-									<div class="col-lg-8">
-										<div class="contact-wrap">
-											<h3 class="mb-4 text-center">Kontaktuj nás</h3>
-											<div id="form-message-warning" class="mb-4 w-100 text-center"></div>
-											<div id="form-message-success" class="mb-4 w-100 text-center text-light">
-												Vaša správa bola odoslaná!
-											</div>
-											<form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<input type="text" class="form-control" name="name" id="name" placeholder="Meno">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<input type="submit" value="Poslať" class="btn btn-warning">
-															<div class="submitting"></div>
-														</div>
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-	</main>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-	<script src="https://kit.fontawesome.com/0a5a614ad4.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
-	
+  <button onclick="topFunction()" id="myBtn" title="Go to top">⇧</button>
+  
+  <!---HEADER-->
+  <div class="wrap-top">
+    <div class="container bg-light">
+      <div class="box">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-4">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
+            <img class="bi me-2 px-5" src="img/logo.png" alt="Logo" height="100" role="img" aria-label="Bootstrap"></img>
+          </a>
+          
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#o-nas"><button type="button" class="btn btn-outline-dark">O nás</button></a></li>
+            <li><a href="#services"><button type="button" class="btn btn-outline-dark">Služby</button></a></li>
+            <li><a href="#apartmany"><button type="button" class="btn btn-outline-dark">Apartmány</button></a></li>
+            <li><a href="#contact"><button type="button" class="btn btn-outline-warning">Kontakt</button></a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    
+    <!---HERO-->
+    <div class="container">
+      <div class="px-4 hero-pad my-4 text-center text-light">
+        <!---<img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">--->
+        <h1 class="display-5 pb-3 fw-bold title">Hotel Steps, Batumi (Gruzínsko)</h1>
+        
+        <div class="col-lg-6 mx-auto">
+          <!--
+            <p class="lead pb-5 pt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            </div>
+          -->
+          <div id="section05" class="demo">
+            <a href="#o-nas"><span></span></a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <!--GALERIA-->
+  <main>
+    <div class="container py-5">
+      <div class="py-5 col-md-10 text-center mx-auto">
+        <h1>Apartmány</h1>
+      </div>
+      <div class="row text-center justify-content-center py-5">
+        <div class="col-md-10 mb-5">
+          <button type="button" class="btn btn-warning waves-effect filter mx-1" data-rel="all">Všetky</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="1">1-Spálňový Apartmán 1</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="2">1-Spálňový Apartmán 2</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="3">2-Spálňový Apartmán 1</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="4">2-Spálňový Apartmán 2</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="5">Panoramatický Apartmán 1</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="6">Panoramatický Apartmán 2</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="7">Štúdio 1</button>
+          <button type="button" class="btn btn-outline-dark waves-effect filter mx-1" data-rel="8">Štúdio 2</button>
+        </div>
+      </div>    
+      <div class="gallery" id="gallery">
+        <!--1spalnovy apartman 1-->
+        <div class="mb-3 pics animation all 1">
+          <a href="img/1-spa-ap-1/Render_01.jpg" data-lightbox="1-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-1/Render_01.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 1">
+          <a href="img/1-spa-ap-1/Render_02.jpg" data-lightbox="1-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-1/Render_02.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 1">
+          <a href="img/1-spa-ap-1/Render_03.jpg" data-lightbox="1-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-1/Render_03.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 1">
+          <a href="img/1-spa-ap-1/Top bedroom.png" data-lightbox="1-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-1/Top bedroom.png" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+
+        <!--1spalnovy apartman 2-->
+        <div class="mb-3 pics animation all 2">
+          <a href="img/1-spa-ap-2/Render_01.jpeg" data-lightbox="1-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-2/Render_01.jpeg" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 2">
+          <a href="img/1-spa-ap-2/Render_02.jpeg" data-lightbox="1-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-2/Render_02.jpeg" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 2">
+          <a href="img/1-spa-ap-2/Render_03.jpg" data-lightbox="1-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-2/Render_03.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 2">
+          <a href="img/1-spa-ap-2/Render_04.jpeg.png" data-lightbox="1-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/1-spa-ap-2/Render_04.jpeg.png" alt="Card image cap">
+          <div class="carousel-caption"><p>1-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+
+        <!--2spalnovy apartman 1-->
+        <div class="mb-3 pics animation all 3">
+          <a href="img/2-spa-ap-1/Render_01.jpg" data-lightbox="2-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-1/Render_01.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 3">
+          <a href="img/2-spa-ap-1/Render_02.jpeg" data-lightbox="2-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-1/Render_02.jpeg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 3">
+          <a href="img/2-spa-ap-1/Render_03.jpg" data-lightbox="2-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-1/Render_03.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 3">
+          <a href="img/2-spa-ap-1/Render_04.jpg" data-lightbox="2-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-1/Render_04.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 3">
+          <a href="img/2-spa-ap-1/TOP 707.png" data-lightbox="2-spa-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-1/TOP 707.png" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 1</p></div>
+          </a>
+        </div>
+
+        <!--2spalnovy apartman 2-->
+        <div class="mb-3 pics animation all 4">
+          <a href="img/2-spa-ap-2/Render_01.jpg" data-lightbox="2-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-2/Render_01.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 4">
+          <a href="img/2-spa-ap-2/Render_02.jpg" data-lightbox="2-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-2/Render_02.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 4">
+          <a href="img/2-spa-ap-2/Render_03.jpg" data-lightbox="2-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-2/Render_03.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 4">
+          <a href="img/2-spa-ap-2/Render_04.jpg" data-lightbox="2-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-2/Render_04.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 4">
+          <a href="img/2-spa-ap-2/Render_05.png" data-lightbox="2-spa-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/2-spa-ap-2/Render_05.png" alt="Card image cap">
+          <div class="carousel-caption"><p>2-Spálňový apartmán 2</p></div>
+          </a>
+        </div>
+
+        <!--panoramaticky apartman 1-->
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_001.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_001.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_002.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_002.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_003.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_003.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_004.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_004.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_005.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_005.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_006.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_006.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_007.jpg" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_007.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 5">
+          <a href="img/pano-ap-1/2125(warm)_Render_008_TOP.png" data-lightbox="pano-ap-1">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-1/2125(warm)_Render_008_TOP.png" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 1</p></div>
+          </a>
+        </div>
+        
+        <!--panoramaticky apartman 2-->
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_001.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_001.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_002.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_002.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_003.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_003.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_004.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_004.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_005.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_005.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_006.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_006.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_007.jpg" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_007.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 6">
+          <a href="img/pano-ap-2/2125_Render_008_TOP.png" data-lightbox="pano-ap-2">
+          <img class="img-fluid" loading="lazy" src="img/pano-ap-2/2125_Render_008_TOP.png" alt="Card image cap">
+          <div class="carousel-caption"><p>Panoramatický Apartmán 2</p></div>
+          </a>
+        </div>
+
+        <!--studio 1-->
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Render_001.jpg" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Render_001.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Render_002.jpg" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Render_002.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Render_003.jpg" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Render_003.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Render_004.jpg" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Render_004.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Render_005.jpg" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Render_005.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Render_006.jpg" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Render_006.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 7">
+          <a href="img/studio-1/Studio top.png" data-lightbox="studio-1">
+          <img class="img-fluid" loading="lazy" src="img/studio-1/Studio top.png" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 1</p></div>
+          </a>
+        </div>
+
+        <!--studio 2-->
+        <div class="mb-3 pics animation all 8">
+          <a href="img/studio-2/Render_001.jpg" data-lightbox="studio-2">
+          <img class="img-fluid" loading="lazy" src="img/studio-2/Render_001.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 8">
+          <a href="img/studio-2/Render_002.jpg" data-lightbox="studio-2">
+          <img class="img-fluid" loading="lazy" src="img/studio-2/Render_002.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 8">
+          <a href="img/studio-2/Render_003.jpg" data-lightbox="studio-2">
+          <img class="img-fluid" loading="lazy" src="img/studio-2/Render_003.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 8">
+          <a href="img/studio-2/Render_004.jpg" data-lightbox="studio-2">
+          <img class="img-fluid" loading="lazy" src="img/studio-2/Render_004.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 8">
+          <a href="img/studio-2/Render_005.jpg" data-lightbox="studio-2">
+          <img class="img-fluid" loading="lazy" src="img/studio-2/Render_005.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 2</p></div>
+          </a>
+        </div>
+        <div class="mb-3 pics animation all 8">
+          <a href="img/studio-2/Render_006.jpg" data-lightbox="studio-2">
+          <img class="img-fluid" loading="lazy" src="img/studio-2/Render_006.jpg" alt="Card image cap">
+          <div class="carousel-caption"><p>Štúdio 2</p></div>
+          </a>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    <!--KONTAKT-->
+    <section class="ftco-section overflow-hidden" id="contact">
+      <div class="container contact-bg">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h1 class="heading-section">Kontakt</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-12">
+            <div class="wrapper">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 mb-5">
+                  <div class="row">
+                    <div class="col-md-4 pb-5">
+                      <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="text">
+                          <p><span>Adresa:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pb-5">
+                      <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-phone"></span>
+                        </div>
+                        <div class="text">
+                          <p><span>Tel. Číslo:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 pb-5">
+                      <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <div class="text">
+                          <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--
+                  <div class="col-lg-8">
+                    <div class="contact-wrap">
+                      <h3 class="mb-4 text-center">Kontaktuj nás</h3>
+                      <div id="form-message-warning" class="mb-4 w-100 text-center"></div>
+                      <div id="form-message-success" class="mb-4 w-100 text-center text-light">
+                        Vaša správa bola odoslaná!
+                      </div>
+                      <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="name" id="name" placeholder="Meno">
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input type="submit" value="Poslať" class="btn btn-warning">
+                              <div class="submitting"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+  <script src="https://kit.fontawesome.com/0a5a614ad4.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  
 </body>
 
 </html>
