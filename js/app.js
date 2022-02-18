@@ -38,6 +38,7 @@ $(function() {
     $("#gallery > div").not("."+selectedClass).fadeOut().removeClass('animation');
     setTimeout(function() {
       $("."+selectedClass).fadeIn().addClass('animation');
+      $("."+selectedClass).fadeIn().removeClass('visually-hidden');
       $("#gallery").fadeTo(300, 1);
     }, 300);
   });

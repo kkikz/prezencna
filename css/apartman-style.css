@@ -68,3 +68,6 @@
     transition: 500ms ease-in-out;
 }
 
+#section05 {
+    display: none;
+}
