@@ -426,3 +426,35 @@ background-color: #555; /* Add a dark-grey background on hover */
 .flip-entry-title {
     display: none !important;
 }
+
+.toolbar {
+    display: none;
+}
+
+.carousel-caption{
+    opacity:0;
+    transition:500ms ease-in-out;
+}
+
+.album:hover .carousel-caption, .pics:hover .carousel-caption{
+    opacity:1;
+    transition:500ms ease-in-out;
+}
+
+.gallery img, .album img {
+    -webkit-filter: brightness(100%);
+}
+
+.gallery img:hover, .album img:hover {
+    -webkit-filter: brightness(70%);
+    transition: 500ms ease-in-out;
+}
+
+.carousel-caption {
+    width: inherit;
+    left: 25%;
+    top: 80% !important;
+    transform: translateY(-50%);
+    text-align: left;
+    bottom: initial;
+    }

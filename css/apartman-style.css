@@ -46,26 +46,7 @@
 }
 
 .btn.filter {
-    font-size: 18px;
-}
-
-.carousel-caption{
-    opacity:0;
-    transition:500ms ease-in-out;
-}
-
-.pics:hover .carousel-caption{
-    opacity:1;
-    transition:500ms ease-in-out;
-}
-
-.gallery img {
-    -webkit-filter: brightness(100%);
-}
-
-.gallery img:hover {
-    -webkit-filter: brightness(70%);
-    transition: 500ms ease-in-out;
+    font-size: 1.2em;
 }
 
 #section05 {
