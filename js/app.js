@@ -43,3 +43,6 @@ $(function() {
     }, 300);
   });
 });
+
+//lazyloading
+lazyload();

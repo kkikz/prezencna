@@ -445,7 +445,7 @@ background-color: #555; /* Add a dark-grey background on hover */
     -webkit-filter: brightness(100%);
 }
 
-.gallery img:hover, .album img:hover {
+.pics a:hover > img, .card a:hover > img{
     -webkit-filter: brightness(70%);
     transition: 500ms ease-in-out;
 }

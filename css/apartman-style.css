@@ -26,6 +26,10 @@
     transition: all 350ms ease; 
 }
 
+.pics {
+    width: 100%;
+}
+
 .gallery .animation {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
