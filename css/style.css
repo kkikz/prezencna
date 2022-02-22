@@ -51,6 +51,10 @@ body {
     max-width: 100%;
 }
 
+.fill-screen {
+    min-height: 90vh;
+}
+
 .btn {
     border-radius: 0;
     border: none;
