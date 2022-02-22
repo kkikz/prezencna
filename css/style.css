@@ -57,8 +57,6 @@ body {
 }
 
 .wrap-top {
-    height: 100vh;
-
     background: url('../img/bg1-1080.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
@@ -77,11 +75,6 @@ body {
     padding: 16% 0;
 }
 
-.title {
-    width: 20em;
-    margin: 0 auto;
-}
-
 .wrap-top p, .wrap-top h1 {
     text-shadow: 2px 2px #222;
 }
@@ -91,13 +84,17 @@ body {
     letter-spacing: 0.02em;
 }
 
+.nav-link {
+    padding: 0;
+}
+
 .btn-primary {
     background-color: #ff5757;
 }
 
 #section05 a span {
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 50%;
     width: 40px;
     height: 40px;

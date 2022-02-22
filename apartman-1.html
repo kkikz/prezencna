@@ -26,18 +26,33 @@
   <div class="wrap-top">
     <div class="container bg-light">
       <div class="box">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-4">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
-            <img class="bi me-2 px-5" src="img/logo.png" alt="Logo" height="100" role="img" aria-label="Bootstrap"></img>
-          </a>
-          
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="/#o-nas"><button type="button" class="btn btn-outline-dark">O nás</button></a></li>
-            <li><a href="/#featured-3"><button type="button" class="btn btn-outline-dark">Služby</button></a></li>
-            <li><a href="/#apartmany"><button type="button" class="btn btn-outline-dark">Apartmány</button></a></li>
-            <li><a href="#contact"><button type="button" class="btn btn-outline-warning">Kontakt</button></a></li>
-          </ul>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+          <div class="container-fluid flex-column flex-md-row">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
+              <img class="bi" src="img/logo.png" alt="Logo" height="100" role="img"
+              aria-label="Bootstrap"></img>
+            </a>
+            <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav text-center text-md-end col-12 justify-content-end">
+                <li class="nav-item my-3 my-lg-0">
+                  <a class="nav-link" aria-current="page" href="/#o-nas"><button type="button" class="btn btn-outline-dark">O nás</button></a>
+                </li>
+                <li class="nav-item my-3 my-lg-0">
+                  <a class="nav-link" href="/#featured-3"><button type="button" class="btn btn-outline-dark">Služby</button></a>
+                </li>
+                <li class="nav-item my-3 my-lg-0">
+                  <a class="nav-link" href="/#apartmany"><button type="button" class="btn btn-outline-dark">Apartmány</button></a>
+                </li>
+                <li class="nav-item my-3 my-lg-0">
+                  <a class="nav-link" href="/#contact"><button type="button" class="btn btn-outline-warning">Kontakt</button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
     
@@ -45,7 +60,7 @@
     <div class="container">
       <div class="px-4 hero-pad my-4 text-center text-light">
         <!---<img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">--->
-        <h1 class="display-5 pb-3 fw-bold title">Hotel Steps, Batumi (Gruzínsko)</h1>
+        <h1 class="display-5 pb-3 fw-bold w-100 m-auto">Hotel Steps, Batumi (Gruzínsko)</h1>
         
         <div class="col-lg-6 mx-auto">
           <!--
@@ -69,7 +84,7 @@
     <!--PDF prezentacia-->
     <div class="container py-5">
       <div class="py-5">
-        <div id="carouselExampleIndicators" class="col-8 m-auto shadow carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="col-12 col-md-8 m-auto shadow carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
