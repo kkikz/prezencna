@@ -52,7 +52,7 @@ body {
 }
 
 .fill-screen {
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .btn {
@@ -98,7 +98,7 @@ body {
 
 #section05 a span {
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     width: 40px;
     height: 40px;
@@ -111,6 +111,7 @@ body {
     animation: sdb05 1.5s infinite;
     box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb05 {
     0% {
       -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -437,7 +438,7 @@ background-color: #555; /* Add a dark-grey background on hover */
     transition:500ms ease-in-out;
 }
 
-.album:hover .carousel-caption, .pics:hover .carousel-caption{
+.card:hover .carousel-caption, .pics:hover .carousel-caption{
     opacity:1;
     transition:500ms ease-in-out;
 }
