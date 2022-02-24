@@ -45,7 +45,7 @@ $(function() {
 });
 
 //lazyloading
-lazyload();
+
 
 //swipe for slides
 $('.carousel').on('touchstart', function(event){
