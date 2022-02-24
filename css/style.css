@@ -387,10 +387,6 @@ background-color: #555; /* Add a dark-grey background on hover */
       padding-top:25px;
       font-size:24px;
     }
-
-    .wrap-top {
-        background-size: contain;
-    }
   }
   
   .photo-gallery .intro {
