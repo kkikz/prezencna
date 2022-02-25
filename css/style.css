@@ -390,7 +390,7 @@ body {
 
 @media (min-width:767px) {
   .wrap-top {
-    background-attachment: ;
+    background-attachment: fixed;
   }
 }
 .photo-gallery .intro {
